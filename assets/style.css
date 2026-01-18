@@ -11,7 +11,7 @@
 .btn{
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 8px;
     padding: 12px 16px;
     color: #FFFFFF;
     background: linear-gradient(35deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
@@ -24,6 +24,8 @@
 
 
 /* Main Style */
+
+/* Navbar related styles */
 header{
     background-color: rgba(26, 11, 46, 1);
 }
@@ -56,6 +58,86 @@ header .nav{
     font-size: 1rem;
     line-height: 1.2;
 }
+
+/* Banner related styles */
+
+.banner{
+    background-image: url("./hero-bg.png");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+.banner .banner-container{
+    max-width: 550px;
+    text-align: center;
+}
+
+.banner-container .banner-img{
+    background-image: url("./hero-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner-container h4{
+    position: absolute;
+    top: 20px;
+    right: 140px;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1A0B2E;
+    background-color: #00FF88;
+    border-radius: 20px;
+    box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
+}
+
+
+
+.banner-container .banner-heading{
+    font-weight: 800;
+    color: #FFFFFF;
+    font-size: 55px;
+    margin-bottom: 8px;
+}
+
+.banner-container .banner-context{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    opacity: 0.8;
+}
+
+.banner-container .banner-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 100px;
+}
+
+.banner-container #subscribe-btn{
+    background-color: #00000000;
+    padding: 12px 20px;
+    border: 1px solid #00FF88;
+    border-radius: 20px;
+    color: #00FF88;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
 
 @media screen and (max-width: 576px){

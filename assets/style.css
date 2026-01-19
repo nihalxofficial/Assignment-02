@@ -26,6 +26,10 @@ hr{
     opacity: 0.1;
 }
 
+/* .play-btn{
+
+} */
+
 /* Main Style */
 
 /* Navbar related styles */
@@ -258,6 +262,87 @@ header .nav{
     grid-row: span 1;
 }
 
+
+/* Featured episodes related styles */
+
+.episodes{
+    background-color: #1A0B2E;
+    padding: 120px 200px;
+}
+
+.episodes-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.episodes-container h2{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.episode-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.episode-items .episode-card{
+    width: 320px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    background-color: #250D44;
+}
+
+.episode-card iframe{
+    border: none;
+    border-radius: 15px;
+    width: 320px;
+    height: 181px;
+    
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.card-content h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.card-content p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 12px;
+}
+
+.video-duration{
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+    gap: 6px;
+}
+
+/* .video-duration img{
+    height: 20px;
+    width: 20px;
+} */
+
+.video-duration h6{
+    font-size: 14px;
+    line-height: 22px;
+    color: #00FF88;
+}
+
+
 @media screen and (max-width: 576px){
     .nav{
         width: 400px;
@@ -355,8 +440,6 @@ header .nav{
 
     .features-grid{
         grid-template-columns: 1fr;
-        /* grid-template-rows: 220px 220px 220px; */
-        /* grid-template-rows: repeat(5, 280px); */
         gap: 16px;
     }
     .grid-item{

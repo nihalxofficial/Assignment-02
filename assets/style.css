@@ -86,7 +86,6 @@ header .nav{
     background-image: url("./hero-circle.png");
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
     height: 300px;
     width: 300px;
     background-size: 100%;
@@ -94,7 +93,7 @@ header .nav{
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-left: 125px;
+    margin: 0 auto 40px;
 }
 
 .banner-container h4{
@@ -287,8 +286,9 @@ header .nav{
     }
 
     .banner-container .banner-img{
-       margin-bottom: 24px;
-       margin-left: 110px;
+       /* margin-bottom: 24px;
+       margin-left: 100px; */
+       margin: 0 auto 24px;
 
     }
 

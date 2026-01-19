@@ -398,6 +398,58 @@ header .nav{
     align-items: center;
 }
 
+
+/* Footer related styles */
+
+footer{
+    background-image: url("./footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+}
+
+.footer-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container .footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 32px 0px;
+}
+
+.footer-links li{
+    list-style: none;
+}
+.footer-links li a{
+    text-decoration: none;
+}
+
+.footer-links .link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.link-item h6{
+    color: #FFFFFF;
+    opacity: 0.6;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-container p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.6;
+    line-height: 24px;
+}
 @media screen and (max-width: 576px){
     .nav{
         width: 400px;

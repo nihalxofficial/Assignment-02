@@ -554,6 +554,47 @@ header .nav{
         width: 12px;
     }
 
+    .host{
+        padding: 20px 20px 40px;
+    }
+    .host-container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .host-container h2{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+
+    .host-card{
+        padding: 24px;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    .host-image{
+        height: 150px;
+        width: 150px;
+    }
+    .host-image img{
+        width: 100%;
+    }
+
+    .host-content h3{
+        font-size: 20px;
+    }
+    .host-content p{
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+
+    .host-content .social-links{
+        justify-content: center;
+        gap: 8px;
+    }
+
 }
 
 

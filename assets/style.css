@@ -152,7 +152,6 @@ header .nav{
     background-color: #1A0B2E;
     padding-top: 50px;
     padding-bottom: 120px;
-    /* height: 630px; */
 }
 
 .about .about-container{
@@ -171,7 +170,6 @@ header .nav{
     font-size: 1rem;
     color: #FFFFFF;
     opacity: 0.8;
-    margin-bottom: 16px;
     line-height: 20px;
 }
 
@@ -182,10 +180,12 @@ header .nav{
 .about .about-items-container{
     width: 1000px;
     margin: 0 auto;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* margin-bottom: 120px; */
+    justify-content: space-around; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .about-items-container .about-item{
@@ -253,6 +253,43 @@ header .nav{
     .banner-container .banner-buttons{
     margin-bottom: 40px;
     }
+
+    .about{
+        padding: 40px 20px;
+    }
+    .about .about-container{
+        width: 400px;
+    }
+
+    .about .about-container h2{
+        font-size: 2rem;
+    }
+
+    .about .about-container p{
+        font-size: 14px;
+    }
+
+    .about .about-items-container{
+        width: 400px;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .about-items-container .about-item{
+        width: 180px;
+        height: 80px;
+    }
+
+    .about .about-container hr{
+        margin: 40px 0px 40px 0px;
+    }
+
+
+    .about-items-container .about-item h2{
+        font-size: 35px;
+        margin-bottom: 12px;
+    }
+
 
 }
 

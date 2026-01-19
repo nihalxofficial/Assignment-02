@@ -233,7 +233,6 @@ header .nav{
     padding: 30px;
     border-radius: 40px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -339,6 +338,38 @@ header .nav{
     .about-items-container .about-item h2{
         font-size: 35px;
         margin-bottom: 12px;
+    }
+
+    .features{
+        padding: 40px 20px;
+    }
+    .features-container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .features-container h2{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    .features-grid{
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 220px 220px 220px; */
+        /* grid-template-rows: repeat(5, 280px); */
+        gap: 16px;
+    }
+    .grid-item{
+        padding: 24px;
+    }
+    .grid-item img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .first, .second, .third, .fourth{
+        grid-column: span 1;
+        grid-row: span 1;
     }
 
 

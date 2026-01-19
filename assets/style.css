@@ -337,6 +337,67 @@ header .nav{
 }
 
 
+/* Host related styles */
+
+.host{
+    background-color: #1A0B2E;
+    padding: 0 200px 100px;
+}
+
+.host-container{
+    max-width: 1000px;
+    /* margin: 0 auto; */
+}
+
+.host-container h2{
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.host-card{
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.host-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+.host-content p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.host-content .social-links{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links li{
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 576px){
     .nav{
         width: 400px;

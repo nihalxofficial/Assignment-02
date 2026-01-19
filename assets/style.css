@@ -22,6 +22,9 @@
     border: none;
 }
 
+hr{
+    opacity: 0.1;
+}
 
 /* Main Style */
 
@@ -31,12 +34,21 @@ header{
 }
 
 header .nav{
-    /* margin: 0 auto; */
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* max-width: 1200px; */
+    height: 90px; */
+
+
+
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
     height: 90px;
+    
 }
 
 .nav .hamburger{
@@ -55,6 +67,7 @@ header .nav{
 .menu li a{
     text-decoration: none;
     color: #FFFFFF;
+    opacity: 0.9;
     font-size: 1rem;
     line-height: 1.2;
 }
@@ -82,17 +95,20 @@ header .nav{
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 40px;
-    height: 350px;
+    height: 300px;
+    width: 300px;
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-left: 125px;
 }
 
 .banner-container h4{
     position: absolute;
     top: 20px;
-    right: 140px;
+    right: 20px;
     padding: 8px 12px;
     font-weight: 600;
     font-size: 16px;
@@ -142,7 +158,7 @@ header .nav{
 
 @media screen and (max-width: 576px){
     .nav{
-        gap: 50px;
+        width: 400px;
     }
 
     .nav .hamburger{
@@ -161,4 +177,23 @@ header .nav{
     .nav .btn{
         display: none;
     }
+
+    .banner{
+        background-size: cover;
+    }
+
+    .banner-container .banner-img{
+       margin-bottom: 24px;
+       margin-left: 110px;
+
+    }
+
+
+    .banner-container .banner-heading {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
 }
+
+

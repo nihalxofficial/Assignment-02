@@ -34,19 +34,11 @@ header{
 }
 
 header .nav{
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 90px; */
-
-
-
-
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 90px;
     
 }
@@ -154,6 +146,67 @@ header .nav{
     gap: 8px;
 }
 
+/* About related styles */
+
+.about{
+    background-color: #1A0B2E;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    /* height: 630px; */
+}
+
+.about .about-container{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about .about-container h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.about .about-container p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 16px;
+    line-height: 20px;
+}
+
+.about .about-container hr{
+    margin: 80px 0px 80px 0px;
+}
+
+.about .about-items-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-bottom: 120px; */
+}
+
+.about-items-container .about-item{
+    width: 240px;
+    height: 95px;
+    text-align: center;
+}
+
+.about-items-container .about-item h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+.about-items-container .about-item p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 0.8;
+    line-height: 20px;
+}
+
 
 
 @media screen and (max-width: 576px){
@@ -192,6 +245,13 @@ header .nav{
     .banner-container .banner-heading {
         font-size: 40px;
         margin-bottom: 8px;
+    }
+    .banner-container .banner-context {
+        margin-bottom: 24px;
+    }
+
+    .banner-container .banner-buttons{
+    margin-bottom: 40px;
     }
 
 }

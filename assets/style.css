@@ -151,7 +151,7 @@ header .nav{
 .about{
     background-color: #1A0B2E;
     padding-top: 50px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 
 .about .about-container{
@@ -180,10 +180,6 @@ header .nav{
 .about .about-items-container{
     width: 1000px;
     margin: 0 auto;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around; */
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -207,7 +203,62 @@ header .nav{
     line-height: 20px;
 }
 
+/* Features Related Styles */
 
+
+.features{
+    background-color: #230E3D;
+    padding: 120px 200px 120px 200px;
+}
+
+.features-container{
+    max-width: 1000px;
+}
+
+.features-container h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px 220px;
+    gap: 30px;
+}
+.grid-item{
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 30px;
+    border-radius: 40px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.grid-item h4{
+    margin: 16px 0px 16px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.grid-item p{
+    color: #FFFFFF;
+    opacity: 0.6;
+    line-height: 20px;
+    font-size: 14px;
+}
+.first{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.second, .third, .fourth{
+    grid-column: span 2;
+    grid-row: span 1;
+}
 
 @media screen and (max-width: 576px){
     .nav{

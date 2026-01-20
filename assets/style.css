@@ -8,18 +8,38 @@
     font-family: "Inter", sans-serif;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 12px 16px;
     color: #FFFFFF;
-    background: linear-gradient(35deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    background: linear-gradient(35deg, 
+        rgba(247, 233, 63, 1), 
+        rgba(251, 9, 180, 1), 
+        rgba(145, 0, 248, 1));
     border-radius: 25px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease;
+    animation: gradientMove 3s infinite alternate;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(251, 9, 180, 0.5);
+    animation-play-state: paused;
 }
 
 hr{
@@ -96,7 +116,7 @@ header .nav{
     margin: 0 auto 40px;
 }
 
-.banner-container h4{
+.banner-container .badge{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -107,6 +127,19 @@ header .nav{
     background-color: #00FF88;
     border-radius: 20px;
     box-shadow: 0px 3px 27px rgba(0, 255, 136, 0.5);
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 
@@ -133,7 +166,7 @@ header .nav{
     margin-bottom: 100px;
 }
 
-.banner-container #subscribe-btn{
+.banner-container #subscribe-btn {
     background-color: #00000000;
     padding: 12px 20px;
     border: 1px solid #00FF88;
@@ -143,6 +176,28 @@ header .nav{
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: all 0.3s ease;
+    animation: colorFade 4s infinite alternate;
+}
+
+@keyframes colorFade {
+    0% {
+        border-color: #00FF88;
+        color: #00FF88;
+    }
+    100% {
+        border-color: #33FFAA;
+        color: #33FFAA;
+    }
+}
+
+.banner-container #subscribe-btn:hover {
+    animation: none;
+    background-color: rgba(0, 255, 136, 0.1);
+    border-color: #33FFAA;
+    color: #33FFAA;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(51, 255, 170, 0.4);
 }
 
 /* About related styles */
@@ -445,6 +500,12 @@ footer{
     opacity: 0.6;
     line-height: 24px;
 }
+
+.footer-hr{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
 @media screen and (max-width: 576px){
     .nav{
         width: 400px;
@@ -670,5 +731,11 @@ footer{
     .footer-container p{
         max-width: 400px;
         font-size: 12px;
+    }
+
+    .footer-hr{
+        width: 100%;
+        /* margin: 0 auto; */
+        margin-bottom: 16px;
     }
 }

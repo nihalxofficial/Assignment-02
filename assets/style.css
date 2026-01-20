@@ -572,10 +572,9 @@ footer{
     }
 
     .about .about-items-container{
-        max-width: 300px;
+        max-width: 360px;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        margin-right: 50px;
     }
 
     .about-items-container .about-item{

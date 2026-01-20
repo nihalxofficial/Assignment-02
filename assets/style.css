@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Shared Style */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -341,7 +347,7 @@ header .nav{
 }
 
 .episode-items .episode-card{
-    max-width: 320px;
+    max-width: 300px;
     max-height: 400px;
     position: relative;
     border-radius: 20px;
@@ -351,7 +357,7 @@ header .nav{
 .episode-card iframe{
     border: none;
     border-radius: 15px;
-    width: 320px;
+    width: 300px;
     height: 181px;
     
 }
@@ -507,8 +513,9 @@ footer{
     margin-bottom: 16px;
 }
 @media screen and (max-width: 576px){
+
     .nav{
-        width: 400px;
+        width: 300px;
     }
 
     .nav .hamburger{
@@ -552,7 +559,8 @@ footer{
         padding: 40px 20px;
     }
     .about .about-container{
-        width: 400px;
+        max-width: 300px;
+        /* margin: 0 auto; */
     }
 
     .about .about-container h2{
@@ -564,9 +572,10 @@ footer{
     }
 
     .about .about-items-container{
-        width: 400px;
+        max-width: 300px;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 20px;
+        margin-right: 50px;
     }
 
     .about-items-container .about-item{
@@ -588,7 +597,7 @@ footer{
         padding: 40px 20px;
     }
     .features-container{
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
@@ -619,7 +628,7 @@ footer{
     }
 
     .episodes-container{
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .episodes-container h2{
@@ -666,7 +675,7 @@ footer{
         padding: 20px 20px 40px;
     }
     .host-container{
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
@@ -704,14 +713,16 @@ footer{
     }
 
     footer{
-        background-size: 440px 250px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         background-position: center;
-        height: 350px;
+        /* height: 380px; */
         width: 100%;
+        padding: 0px 0px;
     }
 
     .footer-container{
-        max-width: 400px;
+        max-width: 300px;
         margin: 0 auto;
         text-align: center;
     }
@@ -720,6 +731,7 @@ footer{
     .footer-container .footer-logo{
         width: 220px;
         height: 30px;
+        margin-top: 25px;
     }
     .footer-links{
         flex-wrap: wrap;
@@ -729,13 +741,17 @@ footer{
         font-size: 12px;
     }
     .footer-container p{
-        max-width: 400px;
+        max-width: 300px;
         font-size: 12px;
+        padding-bottom: 20px;
     }
 
     .footer-hr{
         width: 100%;
-        /* margin: 0 auto; */
         margin-bottom: 16px;
+    }
+    body {
+        overflow-x: hidden;
+        width: 100%;
     }
 }
